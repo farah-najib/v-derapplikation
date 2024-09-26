@@ -57,5 +57,11 @@ const weatherCodeMap = {
 }
 
 export const getWeatherDescr = (code) => {
-    return weatherCodeMap[code] || { description: 'Unknown weather', icon: '', iconsymbol:'' }
+    return (
+        weatherCodeMap[code] || {
+            description: 'Unknown weather',
+            icon: '',
+            iconsymbol: ''
+        }
+    )
 }

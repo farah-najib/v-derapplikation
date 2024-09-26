@@ -1,5 +1,4 @@
-
- const googleMapsApiKey = 'YOUR_GOOGLE_MAPS_API_KEY'; // Replace with your actual Google Maps API key
+const googleMapsApiKey = 'YOUR_GOOGLE_MAPS_API_KEY' // Replace with your actual Google Maps API key
 
 export function searchCity() {
     const city = document.getElementById('city').value

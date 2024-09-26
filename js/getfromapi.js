@@ -47,7 +47,6 @@ function getWindDirection(degrees) {
     return directions[index]
 }
 
-
 //   export async function fetchWeather() {
 //       const apiUrl =
 //           'https://api.open-meteo.com/v1/forecast?latitude=59.3293&longitude=18.0686&daily=temperature_2m_max,temperature_2m_min,weathercode&timezone=Europe/Stockholm&forecast_days=5'
