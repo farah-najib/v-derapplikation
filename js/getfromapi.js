@@ -28,7 +28,7 @@ export async function getWeather(latitude, longitude) {
 }
 
 // Fetch 5-day weather data
-export async function fetch5dayweather(latitude, longitude) {
+export async function fetchFiveDay(latitude, longitude) {
      try {
    const response = await fetch(
        `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&daily=temperature_2m_max,temperature_2m_min,weathercode&timezone=Europe/Stockholm&forecast_days=5`

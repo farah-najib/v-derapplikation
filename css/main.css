@@ -35,7 +35,11 @@ body::before {
 
 .app {
     background-color: #86b9e0;
-    
+}
+@media (max-width: 991.98px) {
+    .app {
+        background-color: transparent;
+    }
 }
 
 .tablet-portrait {
@@ -46,8 +50,18 @@ body::before {
     /* float: left; */
     box-shadow: inset 0px 0px 0px -4px rgba(255, 255, 255, 0.1),
         1px 1px 6px rgba(0, 0, 0, 0.05), 1px 1px 8px rgba(0, 0, 0, 0.07);
-    width: 40vw;
-    height: 90vh;
+    width: 45vw;
+    height: 95vh;
+}
+@media (max-width: 991.98px) {
+    .tablet-portrait {
+        padding: 0; /* Disable padding */
+        border: none; /* Remove border */
+        background-color: transparent; /* Remove background */
+        box-shadow: none; /* Remove shadow */
+        height: auto; /* Auto height */
+        width: 100%; /* Full width */
+    }
 }
 .tablet-landscape {
     padding: 2% 65px;
@@ -58,8 +72,19 @@ body::before {
     /* float: left; */
     box-shadow: inset 0px 0px 0px -4px rgba(255, 255, 255, 0.1),
         1px 1px 6px rgba(0, 0, 0, 0.05), 1px 1px 8px rgba(0, 0, 0, 0.07);
-    height: 40vw;
+    height: 45vw;
     width: 60vw;
+}
+
+@media (max-width: 991.98px) {
+    .tablet-landscape {
+        padding: 0; /* Disable padding */
+        border: none; /* Remove border */
+        background-color: transparent; /* Remove background */
+        box-shadow: none; /* Remove shadow */
+        height: auto; /* Auto height */
+        width: 100%; /* Full width */
+    }
 }
 
 .card {
@@ -69,7 +94,15 @@ body::before {
     border: 0px;
     border-radius: 0%;
     background-color: #e0e0e0;
-    /* opacity: 0.5; */
+}
+@media (max-width: 991.98px) {
+    .card {
+        width: auto;
+        margin-right: 10px;
+        margin-left: 10px;
+        border: 1px solid #e0e0e0;
+        border-radius: 10px;
+    }
 }
 #forecast-container {
     margin-top: 100px;
