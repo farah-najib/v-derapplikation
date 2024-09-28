@@ -14,7 +14,7 @@ git clone https://github.com/farah-najib/v-derapplikation.git
 - run app locally 
 ``` npm run dev ```
 
-View online (v-derapplikation.vercel.app) 
+View online (https://v-derapplikation.vercel.app/) 
 
 Weather data from(https://open-meteo.com/)
 
