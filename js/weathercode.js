@@ -11,7 +11,7 @@ const weatherCodeMap = {
     },
     2: {
         description: 'Partly cloudy',
-        icon: '<div class="weather-cloudAndSun" style="background-color: red;"><div class="cloud"></div><div class="sun"><div class="rays"></div><div class="rays"></div><div class="rays"></div><div class="rays"></div></div></div>',
+        icon: '<div class="weather-cloudAndSun"><div class="cloud"></div><div class="sun"><div class="rays"></div><div class="rays"></div><div class="rays"></div><div class="rays"></div></div></div>',
         iconsymbol: '⛅'
     },
     3: {
