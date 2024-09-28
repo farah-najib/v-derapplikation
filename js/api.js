@@ -1,5 +1,5 @@
-import { updateWeather } from './updateweather'
-import { displayForecast } from './updateweather'
+import { updateWeather } from './ui'
+import { displayForecast } from './ui'
 
 export async function getWeather(latitude, longitude) {
     try {

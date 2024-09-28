@@ -1,5 +1,5 @@
-import { getWeather } from './js/getfromapi'
-import { showCurrentTime } from './js/showtime'
+import { getWeather } from './js/api'
+import { showCurrentTime } from './js/time'
 
 const latitude = 59.3293
 const longitude = 18.0686
