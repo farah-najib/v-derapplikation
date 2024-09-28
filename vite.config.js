@@ -5,7 +5,7 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 main: 'index.html',
-                femdagar: 'femdagar.html'
+                forcast: 'forcast.html'
             }
         }
     }
