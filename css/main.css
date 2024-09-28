@@ -1,12 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
 * {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Audiowide', sans-serif;
 }
-
-/* body {
-
-    background-size: cover;
-    background-repeat: no-repeat;
-} */
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -29,8 +24,8 @@ body::before {
     background: var(--color-darkblue);
     background-image: linear-gradient(
             115deg,
-            rgba(58, 58, 158, 0.8),
-            rgba(136, 136, 206, 0.7)
+            rgba(255, 255, 255, 0.5),
+            rgba(255, 255, 255, 0.3)
         ),
         url('../public/images/background.jpg');
     background-size: cover;
@@ -81,7 +76,7 @@ body::before {
     gap: 20px;
 }
 h2.text-center {
-    margin-top: 20px; /* Adjust the value as needed */
+    padding-top: 10%;
 }
 .weather-icon {
     box-sizing: content-box;
@@ -131,4 +126,60 @@ hr {
 .location-info p {
     text-align: center;
     font-size: 40px;
+}
+.custom-icon {
+    color: #fff; /* Blue color */
+    font-size: 24px; /* Font size */
+    margin: 10px; /* Optional margin */
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.custom-icon:hover {
+    color: #594c4a; /* Change color on hover */
+    transform: scale(1.2); /* Slight scale on hover */
+}
+a {
+    text-decoration: none !important; /* Remove underline */
+}
+
+a:focus {
+    outline: none !important; /* Remove the focus outline */
+}
+/* Tooltip text */
+.tooltip-text {
+    visibility: hidden;
+    width: 180px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltip-text::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip */
+.tooltip-container a:hover + .tooltip-text,
+.tooltip-container a:focus + .tooltip-text {
+    visibility: visible;
+    opacity: 1;
 }
