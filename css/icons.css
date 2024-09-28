@@ -1,17 +1,4 @@
-h1 {
-    font-size: 4em;
-    text-align: center;
-    padding-top: 50px;
-    color: #add8e6;
-    font-family: 'agency fb';
-    margin: 0;
-}
 
-.container {
-    width: 800px;
-    height: 100vh;
-    margin: 0 auto;
-}
 
 .weather-sun,
 .weather-cloud,
